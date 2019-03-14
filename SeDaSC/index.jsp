@@ -1,0 +1,501 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>SeDaSC</title>
+<!--/tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//tags -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<!-- //for bootstrap working -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- header -->
+<div class="header" id="home">
+	<div class="container">
+		<ul>
+		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> User Sign In </a></li>
+			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>User Sign Up </a></li>
+		 <li> <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-unlock-alt" aria-hidden="true"></i> CS Sign In </a></li>
+			 <li> <a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Cloud Sign In </a></li>
+			
+		</ul>
+	</div>
+</div>
+<!-- //header -->
+<!-- header-bot -->
+<div class="header-bot">
+	<div class="header-bot_inner_wthreeinfo_header_mid">
+		
+		<!-- header-bot -->
+			<div class="col-md-12 logo_agile">
+				<h1><a href="#"><span>SeDaSC</span>&nbsp;&nbsp;Secure Data Sharing in Clouds</a></h1>
+			</div>
+        <!-- header-bot -->
+		
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //header-bot -->
+<!-- banner -->
+<div class="ban-top">
+	<div class="container">
+		<div class="top_nav_left">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav menu__list">
+					<li ><a class="menu__link" href="index.jsp">Home 
+					<li class=" menu__item"><a class="menu__link" href="contact.html"></a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>	
+		</div>
+		
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //banner-top -->
+<!-- Modal1 -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+						<div class="modal-body modal-body-sub_agile">
+						<div class="col-md-8 modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">User Sign In <span>Now</span></h3>
+									<form action="ulogin.jsp" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="email" name="email" required="">
+								<label>Email</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="password" name="pwd" required=""> 
+								<label>Password</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+						
+								<select name="member" required>
+									<option value="User" selected>User
+									<option value="Owner">Owner
+								</select> &nbsp;&nbsp;&nbsp;		Select Desigination
+								
+								
+							</div> 
+							<input type="submit" value="Sign In">
+						</form>
+						 
+														<div class="clearfix"></div>
+														<p><a href="#" data-toggle="modal" data-target="#myModal2" > Don't have an account?</a></p>
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- //Modal content-->
+			</div>
+		</div>
+<!-- //Modal1 -->
+
+
+<!-- Modal2 -->
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+						<div class="modal-body modal-body-sub_agile">
+						<div class="col-md-8 modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">User Sign Up <span>Now</span></h3>
+
+
+
+
+						 <form action="register1.jsp" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="name" required="">
+								<label>Name</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="email" name="email" required=""> 
+								<label>Email</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+						
+								<select name="group">
+									<option value="Group1">Group1
+									<option value="Group2">Group2
+									<option value="Group3">Group3
+									<option value="Group4">Group4
+									<option value="Group5">Group5
+								</select> &nbsp;&nbsp;&nbsp;		Select Group 
+								
+								
+							</div> 
+							<div class="styled-input">
+								<input type="text" name="tele" required=""> 
+								<label> Contact</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+								<input type="text" name="addr" required=""> 
+								<label> Address</label>
+								<span></span>
+							</div> 
+
+							
+							<div class="styled-input">
+								<input type="password" name="pwd" required=""> 
+								<label> Password</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+						
+								<select name="member" required>
+									<option value="User" selected>User
+									<option value="Owner">Owner
+								</select> &nbsp;&nbsp;&nbsp;		Select Desigination
+								
+								
+							</div> 
+							
+							<input type="submit" value="Sign Up">
+						</form>
+						  
+														<div class="clearfix"></div>
+														<p><a href="#">By clicking Sign Up, I agree to your terms</a></p>
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- //Modal content-->
+			</div>
+		</div>
+<!-- //Modal2 -->
+
+
+
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+						<div class="modal-body modal-body-sub_agile">
+						<div class="col-md-8 modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">Cloud Sign In <span>Now</span></h3>
+									<form action="clogin.jsp" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="uid" value="cloud" required="">
+								<label>User Id</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="password" name="pwd" required=""> 
+								<label>Password</label>
+								<span></span>
+							</div> 
+							<input type="submit" value="Sign In">
+						</form>
+						 
+														<div class="clearfix"></div>
+														
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- //Modal content-->
+			</div>
+		</div>
+<!-- //Modal1 -->
+
+
+
+
+
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+						<div class="modal-body modal-body-sub_agile">
+						<div class="col-md-8 modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">CS Sign In <span>Now</span></h3>
+									<form action="cslogin.jsp" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="unm" value="CS"required="">
+								<label>Userid</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="password" name="pwd" required=""> 
+								<label>Password</label>
+								<span></span>
+							</div> 
+							<input type="submit" value="Sign In">
+						</form>
+						 
+														<div class="clearfix"></div>
+														
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- //Modal content-->
+			</div>
+		</div>
+<!-- //Modal1 --> 
+
+
+
+
+<!-- banner -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+			
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active"> 
+				<div class="container">
+					<div class="carousel-caption">
+						<h3>Secure  <span>Data</span></h3>
+						<p>Sharing In Clouds</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="item item2"> 
+				<div class="container">
+					<div class="carousel-caption">
+							<h3>Secure  <span>Data</span></h3>
+						<p>Sharing In Clouds</p>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- The Modal -->
+    </div> 
+
+
+
+	<!-- //banner -->
+    <div class="banner_bottom_agile_info">
+	    <div class="container">
+         
+			
+			<center><img src="images/arch.png" width="500" height="385" border="0" alt=""></center>
+			
+			</div>
+		</div>
+	<!-- //new_arrivals --> 
+	<!-- /we-offer -->
+		
+	<!-- //we-offer -->
+<!--/grids-->
+
+<!--grids-->
+<!-- footer -->
+<div class="footer">
+	<div class="footer_agile_inner_info_w3l">
+		
+				
+				<div class="col-md-12 sign-gd-two">
+					<h4>Contact <span>Information</span></h4>
+					<div class="w3-address">
+						<div class="w3-address-grid">
+							<div class="w3-address-left">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</div>
+							<div class="w3-address-right">
+								<h6>Phone Number</h6>
+								<p>+91 8121 953811</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="w3-address-grid">
+							<div class="w3-address-left">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="w3-address-right">
+								<h6>Email Address</h6>
+								<p>Email :<a href="mailto:cloudtechnologieprojects@gmail.com"> cloudtechnologieprojects@gmail.com</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="w3-address-grid">
+							<div class="w3-address-left">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+							</div>
+							<div class="w3-address-right">
+								<h6>Location</h6>
+								<p>#304,Siri towers, Maitrivanam, Ameerpet, Hyd.
+								
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				
+		<div class="clearfix"></div>
+	</div>
+		<p class="copy-right">&copy 2017 CT . All rights reserved | Design by <a href="http://cloudstechnologies.in/">Cloud Technologies</a></p>
+	</div>
+</div>
+<!-- //footer -->
+
+<!-- login -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<script src="js/modernizr.custom.js"></script>
+	<!-- Custom-JavaScript-File-Links --> 
+	<!-- cart-js -->
+	<script src="js/minicart.min.js"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+
+	<!-- //cart-js --> 
+<!-- script for responsive tabs -->						
+<script src="js/easy-responsive-tabs.js"></script>
+<script>
+	$(document).ready(function () {
+	$('#horizontalTab').easyResponsiveTabs({
+	type: 'default', //Types: default, vertical, accordion           
+	width: 'auto', //auto or any width like 600px
+	fit: true,   // 100% fit in a container
+	closed: 'accordion', // Start closed if in accordion view
+	activate: function(event) { // Callback function if tab is switched
+	var $tab = $(this);
+	var $info = $('#tabInfo');
+	var $name = $('span', $info);
+	$name.text($tab.text());
+	$info.show();
+	}
+	});
+	$('#verticalTab').easyResponsiveTabs({
+	type: 'vertical',
+	width: 'auto',
+	fit: true
+	});
+	});
+</script>
+<!-- //script for responsive tabs -->		
+<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+	<script>
+		$('.counter').countUp();
+	</script>
+<!-- //stats -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+
+
+<!-- for bootstrap working -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
+	                  <%
+                                                       String m=request.getParameter("id");
+                                                       if(m!=null && m.equalsIgnoreCase("succ"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert(' Registration Successfuly Completed'); </script>");
+                                                       }
+                                                       if(m!=null && m.equalsIgnoreCase("fail"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert(' Login Fail'); </script>");
+                                                       }
+                                               %>

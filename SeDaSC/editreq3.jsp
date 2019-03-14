@@ -1,0 +1,89 @@
+
+<%@ page import="java.sql.*,databaseconnection.*, CT.*,java.util.*"%>
+<%@ include file="csheader.jsp"%>
+		  <head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+</style>
+</head>
+<h1>Update Request</h1>
+<table>
+<%!String K2,K3;%>
+<%
+String sno=request.getParameter("sno");
+String email=request.getParameter("email");
+String fid=request.getParameter("fid");
+String file=request.getParameter("file");
+
+
+
+Connection con1 = databasecon.getconnection();
+
+
+try
+{
+	
+	Statement st1 = con1.createStatement();
+
+Statement st2 = con1.createStatement();
+Statement st3 = con1.createStatement();
+Statement st11 = con1.createStatement();
+
+ResultSet rst=st2.executeQuery("select fkey from acl where fid='"+fid+"' and uemail='"+email+"'");
+if(rst.next()){
+K2=rst.getString(1);
+}
+System.out.println("k2="+K2);
+
+	ResultSet rst1=st3.executeQuery("select sk from request where fid='"+fid+"' and email='"+email+"'");
+if(rst1.next()){
+K3=rst1.getString(1);
+}
+//System.out.println("k3="+K3);
+int K=Integer.parseInt(K2) ^ Integer.parseInt(K3);
+
+String sk=SHA_256.hashCode(new Integer(K).toString());
+	
+	PreparedStatement pst=con1.prepareStatement("update files set file_=AES_ENCRYPT(?,'"+sk+"') where fid=? ");
+	pst.setString(1,file);
+	pst.setString(2,fid);
+	pst.executeUpdate();
+	st1.executeUpdate("update updatereq set status='complete' where sno='"+sno+"' ");	
+
+
+Random randomGenerator = new Random();
+		int hmackey=randomGenerator.nextInt(100000000);
+
+ResultSet rs2=st2.executeQuery("select file_ from files where fid='"+fid+"'");
+if(rs2.next()){
+
+String encdata=new String(rs2.getBytes(1));
+
+
+String HmacSig=HMAC.calculateHMAC(encdata, new Integer(hmackey).toString());
+
+st11.executeUpdate("update dataintgrty set hmac='"+HmacSig+"',hkey='"+hmackey+"' where fid='"+fid+"'");
+
+}
+
+	response.sendRedirect("editreq1.jsp?id=succ");
+
+}
+catch(Exception e){System.out.println(e);
+e.printStackTrace();
+}
+
+%>
+
+
+</table>
+
+
+<br><br><br><br><br>
+<%@ include file="footer.jsp"%>

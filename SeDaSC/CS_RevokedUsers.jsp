@@ -1,0 +1,72 @@
+
+
+<%@ page import="java.sql.*,databaseconnection.*"%>
+<%
+                                                       String message=request.getParameter("id");
+                                                  
+                                                       
+                                                       if(message!=null && message.equals("fail"))
+                                                       {
+													  out.println("<script type=text/javascript>alert('Failed To Denied User Access Permission!! '); </script>");
+                                                       }
+													     if(message!=null && message.equalsIgnoreCase("succ"))
+                                                       {
+													  out.println("<script type=text/javascript>alert('Successfully Denied User Access Permissions!! '); </script>");
+                                                       }
+                                               %>
+
+<%@ include file="csheader.jsp"%>
+
+
+		  <head>
+<style>
+table, th, td {
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+</style>
+</head>
+
+<h2>Revoked Users</h1><br>
+<table cellspacing="10">
+<tr><td><h3>User Id<td><h3>Name<td><h3>Email<td><h3>Group<td><h3>Remove Access
+
+
+
+
+<%
+
+Connection con1 = databasecon.getconnection();
+try
+{
+	String ss=null;
+	Statement st = con1.createStatement();
+	Statement st2 = con1.createStatement();
+	ResultSet rs=st.executeQuery(" select * from users where ustatus='Revoke' ");
+	while(rs.next()){
+	
+	%>
+		
+		 
+		 <tr><td><h3><font size="3" color="#ff2020"><%=rs.getString(1)%><td><h3><font size="3" color="#ff2020"><%=rs.getString(2)%><td><h3><font size="3" color="#ff2020"><%=rs.getString(5)%><td><h3><font size="3" color="#ff2020"><%=rs.getString(7)%>
+		<td><h3><font size="3" color="#ff2020"><a href="CS_RevokedUsersAction.jsp?id=<%=rs.getString(5)%>">Remove</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<%
+	}
+}
+catch(Exception e){System.out.println(e);
+e.printStackTrace();}
+%>
+
+
+
+
+</table>
+<hr>
+<br><br><br><br><br>
+
+
+
+<%@ include file="footer.jsp"%>

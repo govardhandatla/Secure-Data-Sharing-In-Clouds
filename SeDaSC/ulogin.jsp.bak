@@ -1,0 +1,38 @@
+<%@ page  import="java.sql.*" import="databaseconnection.*" %>
+<%
+String a = request.getParameter("email");
+String b= request.getParameter("pwd");
+String member= request.getParameter("member");
+String name=null,u=null,test2=null,role=null;
+
+try{
+Connection con1 = databasecon.getconnection();
+Statement st1 = con1.createStatement();
+String sss1 = "select * from users where email='"+a+"' && pwd='"+b+"' and member='"+member+"' ";
+
+	ResultSet rs1=st1.executeQuery(sss1);
+	if(rs1.next())
+	{
+		session.setAttribute("name",rs1.getString("name"));
+		session.setAttribute("group",rs1.getString("group_"));
+		session.setAttribute("user",a);
+		if(member.equals("User")){
+		response.sendRedirect("user_home.jsp");}
+		else if(member.equals("Owner")){
+		response.sendRedirect("user_home.jsp");}
+		else{response.sendRedirect("index.jsp?id=fail");
+}
+		}
+		else{
+		response.sendRedirect("index.jsp?id=fail");
+
+	}
+}
+
+
+catch(Exception e1)
+{
+out.println(e1.getMessage());
+}
+
+%>
